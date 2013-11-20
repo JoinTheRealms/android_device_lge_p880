@@ -235,7 +235,7 @@ public class X3RIL extends RIL implements CommandsInterface {
         if (loggable) {
             StringBuilder sb = new StringBuilder();
             sb.append("WAKE_LOCK_TIMEOUT  mReqPending=");
-            sb.append(mRequestMessagesPending);
+            //sb.append(mRequestMessagesPending);
             sb.append(" mRequestList=");
             sb.append(count);
             riljLog("EternityProject RIL: " + sb.toString());
@@ -256,7 +256,7 @@ public class X3RIL extends RIL implements CommandsInterface {
             rr.release();
         }
         mRequestList.clear();
-        mRequestMessagesWaiting = 0;
+        //mRequestMessagesWaiting = 0;
 
         return;
     }
